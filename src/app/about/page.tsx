@@ -15,9 +15,12 @@ function MemberItem(props: {
     <div className={props.className}>
       <Image
         src={`/img/face_${props.face}.png`}
-        width={512}
-        height={512}
+        // CHANGED: 이미지 크기 수정 512->100
+        width={100}
+        height={100}
         alt={props.name}
+        // CHANGED: 이미지 모서리 둥글게
+        className="rounded-lg"
       />
       <div>{props.name}</div>
       <div>{props.role}</div>
@@ -30,15 +33,24 @@ export default function AboutPage() {
     <AppFrame>
       <SectionDivider />
       <h1>ABOUT</h1>
-      <h3>Headless AI Solutions to XR Experience World</h3>
-      <h4>
-        DeepXRLab leverages GenAI technology to build next-generation AI NPCs
-        and headless platforms with unparalleled expertise. Our advanced
-        solutions create a new paradigm, seamlessly bridging reality and the
-        virtual world to deliver truly immersive experiences.
-      </h4>
+      {/* CHANGED: 가운데 정렬, 공백 추가 mt-6, 글자 굵게 font-bold */}
+      <div className="text-center mt-6 font-bold text-2xl">
+        Headless AI Solutions to XR Experience World
+      </div>
+      {/* CHANGED: 가운데 정렬, 줄바꿈 위치 변경, 글자 두께 변경 */}
+      <div className="text-center mt-10 text-base font-light space-y-3">
+        <p>
+          DeepXRLab leverages GenAI technology to build next-generation AI NPCs
+          and headless platforms with
+        </p>
+        <p>
+          unparalleled expertise. Our advanced solutions create a new paradigm,
+          seamlessly bridging reality and
+        </p>
+        <p>the virtual world to deliver truly immersive experiences.</p>
+      </div>
 
-      <div className="flex flex-wrap gap-2 justify-center my-4">
+      <div className="flex flex-wrap gap-4 justify-center my-4 mt-6">
         <TextToken>XR PLATFORM</TextToken>
         <TextToken>DIGITAL AVATAR HEADLESS / XR PLATFORM</TextToken>
         <TextToken>GENERATIVE AI</TextToken>
@@ -50,8 +62,9 @@ export default function AboutPage() {
         height={559}
         alt="DeepXRLab Logo"
       />
-      <h2>MAN POWER</h2>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
+      {/* CHANGED: 크기, 두께 수정 */}
+      <div className="text-3xl my-4 font-bold">MAN POWER</div>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-3 mt-10">
         <Image
           src="/img/about_rnd.png"
           width={300}
@@ -71,10 +84,15 @@ export default function AboutPage() {
           alt="DeepXRLab Logo"
         />
       </div>
-      <h2>TEAM MEMBER</h2>
-      <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
-        <MemberItem face="ceo" name="ChangHun. Kim" role="CEO" />
-        <div className="col-span-3 md:col-span-4 lg:col-span-6 h-12" />
+      <div className="text-3xl my-14 font-bold">TEAM MEMBER</div>
+      <div className="grid grid-cols-3 md:grid-cols-8 lg:grid-cols-6 gap-3">
+        <MemberItem
+          face="ceo"
+          name="ChangHun. Kim"
+          role="CEO"
+          className="col-spanfull"
+        />
+        <div className="col-span-3 md:col-span-4 lg:col-span-6" />
 
         <MemberItem face="mjchoi" name="Myungjin Choi" role="PhD" />
         <MemberItem face="qimeng" name="Qimeng Zhang" role="PhD" />

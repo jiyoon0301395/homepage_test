@@ -5,7 +5,8 @@ $mobile_menu_duration: .2s
 
 $color_primary: #900339
 $color_secondary: #e50914
-$color_priblue: #5E8DFF
+// $color_priblue: #5E8DFF
+$color_priblue: #00C3FF
 
 header
   position: fixed
@@ -123,7 +124,9 @@ main
 // 1025~
 @media (min-width: 1025px)
   article
-    background: #008
+    // background: #008
+    // CHANGED: background 검정색으로 변경
+    background: #000
     max-width: 1024px
     margin: 0 auto
     padding: 0 16px
@@ -131,7 +134,9 @@ main
 // 700~1024
 @media (max-width: 1024px)
   article
-    background: #080
+    // background: #080
+    // CHANGED: background 검정색으로 변경
+    background: #000
     padding: 0 12px
 
 // ~700
@@ -247,7 +252,8 @@ article h1
   padding-top: 64px
 
 .tkn
-  border: 1px solid #00C3FF
+// CHANGED: 테두리 두께 1px -> 0.5px
+  border: 0.5px solid #00C3FF
   background-color: #0092BF
   border-radius: 16px
   font-size: 14px

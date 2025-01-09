@@ -21,7 +21,8 @@ function SubmitButton({ pending }: { pending: boolean }) {
     >
       {/* {pending && <Spinner aria-label="Spinner" size="sm" />} */}
       <div className="font-bold text-lg">SEND MESSAGE</div>
-      <div className="rounded-full bg-blue-400 p-2">
+      {/* CHANGE: bg-blue-400 ->  커스텀 색상 */}
+      <div className="rounded-full bg-customBlue p-2">
         <ArrowRight width="16" />
       </div>
     </button>
@@ -85,22 +86,31 @@ export default function SendMsgForm() {
       </div>
 
       <div className="flex flex-col items-center">
-        <div className="flex gap-2 items-center whitespace-nowrap text-blue-500">
+        {/* CHANGED:
+        텍스트 색상 blue-500 -> customBlue
+        텍스트 굵기 기본 -> font-thin*/}
+        <div className="flex gap-2 items-center whitespace-nowrap text-customBlue font-thin">
           <input
             type="checkbox"
             id="chkAgree"
             name="chk"
             value="Y"
-            className="relative peer shrink-0 appearance-none w-4 h-4 border-2 border-blue-500 rounded-sm bg-white mt-1 checked:bg-blue-800 checked:border-0 focus:outline-none focus:ring-offset-0 focus:ring-2 focus:ring-blue-100 disabled:border-steel-400 disabled:bg-steel-400"
+            // CHANGED:
+            // 체크박스 테두리 border-blue-500 -> customBlue/ 체크박스 바탕 색상 bg-white -> bg-black
+            // 체크박스 포커스시 색상 bg-blue-800 -> customBlue
+            // 체크박스 테두리 굵기 border-2 -> border
+            className="relative peer shrink-0 appearance-none w-6 h-6 border border-customBlue rounded-sm bg-black mt-1 checked:bg-black checked:border-customBlue focus:outline-none focus:ring-offset-0 focus:ring-2 focus:ring-blue-100 disabled:border-steel-400 disabled:bg-steel-400"
           />
           <label htmlFor="chkAgree">I agree to the privacy policy.</label>
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="absolute w-4 h-4 mt-1 hidden peer-checked:block pointer-events-none"
+            // CHANGED: 체크 표시 색상 text-blue-500 -> text-customBlue
+            className="absolute w-6 h-6 mt-1 hidden peer-checked:block pointer-events-none text-customBlue"
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
-            strokeWidth="4"
+            // CHANGED: 체크 표시 굵기 strokeWidth 4 -> 1
+            strokeWidth="1"
             strokeLinecap="round"
             strokeLinejoin="round"
           >

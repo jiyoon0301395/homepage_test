@@ -11,7 +11,8 @@ export default function ContactPage() {
       <SectionDivider />
       <h1>CONTACT</h1>
       <div className="text-sm text-center my-8">
-        3F, 38-8, Nonhyeon-ro 38-gil, Gangnam-gu, Seoul, Republic of Korea
+        {/* CHANGED: 주소 수정 */}
+        #1011(10F), 66, Seongsui-ro, Seongdong-gu, Seoul, Republic of Korea
         <br />
         +82 010 3675 3199 | info@deepxrlab.com
       </div>
@@ -20,7 +21,8 @@ export default function ContactPage() {
 
       <h2 className="text-center text-xl my-4">GOOGLE MAP</h2>
       <iframe
-        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d197.87300152278547!2d127.04495007590612!3d37.485080929409136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1699115369242!5m2!1sen!2sus"
+        // CHANGED: 구글맵 위치 수정 논현 -> 성수
+        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d197.87300152278547!2d127.0561825!3d37.5405547!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1699115369242!5m2!1sen!2sus"
         className="w-full h-[24rem] md:h-[32rem] pb-16"
         allowFullScreen={true}
         loading="lazy"

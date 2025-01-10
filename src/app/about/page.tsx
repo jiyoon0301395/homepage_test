@@ -39,18 +39,17 @@ export default function AboutPage() {
       </div>
       {/* CHANGED: 가운데 정렬, 줄바꿈 위치 변경, 글자 두께 변경 */}
       <div className="text-center mt-10 text-base font-light space-y-3">
-        <p>
-          DeepXRLab leverages GenAI technology to build next-generation AI NPCs
-          and headless platforms with
-        </p>
-        <p>
-          unparalleled expertise. Our advanced solutions create a new paradigm,
-          seamlessly bridging reality and
-        </p>
-        <p>the virtual world to deliver truly immersive experiences.</p>
+        DeepXRLab leverages GenAI technology to build next-generation AI NPCs
+        and headless platforms with
+        <br />
+        unparalleled expertise. Our advanced solutions create a new paradigm,
+        seamlessly bridging reality and
+        <br />
+        the virtual world to deliver truly immersive experiences.
       </div>
 
-      <div className="flex flex-wrap gap-4 justify-center my-4 mt-6">
+      {/* <div className="flex flex-wrap gap-4 justify-center my-4 mt-6"> */}
+      <div className="flex flex-wrap gap-4 justify-center my-4">
         <TextToken>XR PLATFORM</TextToken>
         <TextToken>DIGITAL AVATAR HEADLESS / XR PLATFORM</TextToken>
         <TextToken>GENERATIVE AI</TextToken>
@@ -85,14 +84,9 @@ export default function AboutPage() {
         />
       </div>
       <div className="text-3xl my-14 font-bold">TEAM MEMBER</div>
-      <div className="grid grid-cols-3 md:grid-cols-8 lg:grid-cols-6 gap-3">
-        <MemberItem
-          face="ceo"
-          name="ChangHun. Kim"
-          role="CEO"
-          className="col-spanfull"
-        />
-        <div className="col-span-3 md:col-span-4 lg:col-span-6" />
+      <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
+        <MemberItem face="ceo" name="ChangHun. Kim" role="CEO" />
+        <div className="col-span-3 md:col-span-4 lg:col-span-6 h-12" />
 
         <MemberItem face="mjchoi" name="Myungjin Choi" role="PhD" />
         <MemberItem face="qimeng" name="Qimeng Zhang" role="PhD" />

@@ -11,7 +11,6 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
-        // CHANGED: 커스텀 색상 추가
         customBlue: "#00C3FF",
       },
     },

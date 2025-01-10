@@ -48,8 +48,7 @@ export default function AboutPage() {
         the virtual world to deliver truly immersive experiences.
       </div>
 
-      {/* <div className="flex flex-wrap gap-4 justify-center my-4 mt-6"> */}
-      <div className="flex flex-wrap gap-4 justify-center my-4">
+      <div className="flex flex-wrap gap-4 justify-center my-4 mt-6">
         <TextToken>XR PLATFORM</TextToken>
         <TextToken>DIGITAL AVATAR HEADLESS / XR PLATFORM</TextToken>
         <TextToken>GENERATIVE AI</TextToken>

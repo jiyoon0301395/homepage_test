@@ -147,7 +147,7 @@ export default function ProductPage() {
   return (
     <AppFrame>
       <SectionDivider />
-      <h1>PRODUCT</h1>
+      <h1 className="mb-24">PRODUCT</h1>
       <TextToken>AI NPC</TextToken>
       <ProductSlider items={ainpcItems} />
 

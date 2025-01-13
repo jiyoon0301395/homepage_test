@@ -24,14 +24,14 @@ export default function Home() {
         <br />
         with dynamic, immersive interactions like never before.
       </div>
-      <div className="flex flex-wrap gap-[7px] justify-center my-4">
+      <div className="flex flex-wrap gap-[7px] justify-center my-10">
         <TextToken>NPC Persona</TextToken>
         <TextToken>Voice(TTS, STT)</TextToken>
         <TextToken>Quick, Customer-Centric Production</TextToken>
         <TextToken>Variety Emotional Expressions</TextToken>
         <TextToken>Natural Movements</TextToken>
       </div>
-      <div className="flex flex-wrap justify-around gap-[40px]">
+      <div className="flex flex-wrap justify-around gap-[30px] my-[39.5px]">
         <GrayRBox>
           <Image src="/img/home_mock1.png" width={205} height={205} alt="" />
           <div>Mobile - Healthcare & Fitness</div>
@@ -45,7 +45,7 @@ export default function Home() {
           <div>NPC Kiosk - AI Counselor</div>
         </GrayRBox>
       </div>
-      <div className="flex flex-wrap justify-around gap-8">
+      <div className="flex flex-wrap justify-around gap-8 ">
         <Image src="/img/home_npc1.png" width={130} height={130} alt="" />
         <Image src="/img/home_npc2.png" width={130} height={130} alt="" />
         <Image src="/img/home_npc3.png" width={130} height={130} alt="" />

@@ -33,7 +33,7 @@ export default function NewsPage() {
     <AppFrame>
       <SectionDivider />
       <h1>NEWS</h1>
-      <TextToken>LINK NEWS</TextToken>
+      <TextToken fixedSize>LINK NEWS</TextToken>
       <div className="grid grid-cols-2 md:grid-cols-3 gap-8 my-4">
         <NewsItem
           title="딥엑스알랩 딥엑스알랩 “3D·AI 기술로 아바타에 인격을 불어 넣습니다”"

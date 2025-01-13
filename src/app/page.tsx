@@ -61,11 +61,11 @@ export default function Home() {
         spaces, delivering limitless immersive experiences.
       </h4>
 
-      <div className="flex flex-wrap gap-2 justify-center my-4">
-        <TextToken>Metaverse</TextToken>
-        <TextToken>Multi Access</TextToken>
-        <TextToken>Seminar</TextToken>
-        <TextToken>Art Gallery</TextToken>
+      <div className="flex flex-wrap gap-8 justify-center my-4">
+        <TextToken fixedSize>Metaverse</TextToken>
+        <TextToken fixedSize>Multi Access</TextToken>
+        <TextToken fixedSize>Seminar</TextToken>
+        <TextToken fixedSize>Art Gallery</TextToken>
       </div>
 
       <div className="flex flex-wrap justify-around gap-8">

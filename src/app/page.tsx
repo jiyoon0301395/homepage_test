@@ -24,14 +24,14 @@ export default function Home() {
         <br />
         with dynamic, immersive interactions like never before.
       </div>
-      <div className="flex flex-wrap gap-2 justify-center my-4">
+      <div className="flex flex-wrap gap-[7px] justify-center my-4">
         <TextToken>NPC Persona</TextToken>
         <TextToken>Voice(TTS, STT)</TextToken>
         <TextToken>Quick, Customer-Centric Production</TextToken>
         <TextToken>Variety Emotional Expressions</TextToken>
         <TextToken>Natural Movements</TextToken>
       </div>
-      <div className="flex flex-wrap justify-around gap-8">
+      <div className="flex flex-wrap justify-around gap-[40px]">
         <GrayRBox>
           <Image src="/img/home_mock1.png" width={205} height={205} alt="" />
           <div>Mobile - Healthcare & Fitness</div>

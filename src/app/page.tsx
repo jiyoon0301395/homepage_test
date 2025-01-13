@@ -94,9 +94,11 @@ export default function Home() {
       </div>
       <SectionDivider />
       <h1>XR Experience Platform</h1>
-      <h4>
+      <h4 className="text-center text-[24px]">
         Seamlessly move between reality and the virtual, across different
-        spaces, delivering limitless immersive experiences.
+        spaces,
+        <br />
+        delivering limitless immersive experiences.
       </h4>
       <div className="flex flex-wrap gap-8 justify-center my-4">
         <TextToken fixedSize>Metaverse</TextToken>
@@ -104,14 +106,16 @@ export default function Home() {
         <TextToken fixedSize>Seminar</TextToken>
         <TextToken fixedSize>Art Gallery</TextToken>
       </div>
-      <div className="flex flex-wrap justify-around gap-8">
+      <div className="flex flex-wrap justify-around gap-[16px] my-[40px]">
         <GrayRBox>
           <Image src="/img/home_mmm.png" width={205} height={205} alt="" />
-          <div>MMM - 메타버스 회의 플랫폼</div>
+          <div className="text-[14px]">MMM - 메타버스 회의 플랫폼</div>
         </GrayRBox>
         <GrayRBox>
           <Image src="/img/home_atg.png" width={205} height={205} alt="" />
-          <div>ArtTelling - 메타버스 그림 전시 플랫폼</div>
+          <div className="text-[14px]">
+            ArtTelling - 메타버스 그림 전시 플랫폼
+          </div>
         </GrayRBox>
       </div>
       <Image src="/img/home_arch.png" width={959} height={502} alt="" />

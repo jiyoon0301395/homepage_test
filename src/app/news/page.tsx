@@ -28,6 +28,7 @@ function NewsItem(props: NewsProps) {
     </Link>
   );
 }
+
 export default function NewsPage() {
   return (
     <AppFrame>

@@ -148,10 +148,10 @@ export default function ProductPage() {
     <AppFrame>
       <SectionDivider />
       <h1 className="mb-24">PRODUCT</h1>
-      <TextToken>AI NPC</TextToken>
+      <TextToken fixedSize>AI NPC</TextToken>
       <ProductSlider items={ainpcItems} />
 
-      <TextToken>XR</TextToken>
+      <TextToken fixedSize>XR</TextToken>
       <ProductSlider items={xrItems} />
       <div>Page</div>
     </AppFrame>

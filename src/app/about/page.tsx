@@ -15,11 +15,9 @@ function MemberItem(props: {
     <div className={props.className}>
       <Image
         src={`/img/face_${props.face}.png`}
-        // CHANGED: 이미지 크기 수정 512->100
         width={100}
         height={100}
         alt={props.name}
-        // CHANGED: 이미지 모서리 둥글게
         className="rounded-lg"
       />
       <div>{props.name}</div>
@@ -33,11 +31,9 @@ export default function AboutPage() {
     <AppFrame>
       <SectionDivider />
       <h1>ABOUT</h1>
-      {/* CHANGED: 가운데 정렬, 공백 추가 mt-6, 글자 굵게 font-bold */}
       <div className="text-center mt-6 font-bold text-2xl">
         Headless AI Solutions to XR Experience World
       </div>
-      {/* CHANGED: 가운데 정렬, 줄바꿈 위치 변경, 글자 두께 변경 */}
       <div className="text-center mt-10 text-base font-light space-y-3">
         DeepXRLab leverages GenAI technology to build next-generation AI NPCs
         and headless platforms with
@@ -60,7 +56,6 @@ export default function AboutPage() {
         height={559}
         alt="DeepXRLab Logo"
       />
-      {/* CHANGED: 크기, 두께 수정 */}
       <div className="text-3xl my-4 font-bold">MAN POWER</div>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-3 mt-10">
         <Image

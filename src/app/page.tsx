@@ -45,12 +45,52 @@ export default function Home() {
           <div>NPC Kiosk - AI Counselor</div>
         </GrayRBox>
       </div>
-      <div className="flex flex-wrap justify-around gap-8 ">
-        <Image src="/img/home_npc1.png" width={130} height={130} alt="" />
-        <Image src="/img/home_npc2.png" width={130} height={130} alt="" />
-        <Image src="/img/home_npc3.png" width={130} height={130} alt="" />
-        <Image src="/img/home_npc4.png" width={130} height={130} alt="" />
-        <Image src="/img/home_npc5.png" width={130} height={130} alt="" />
+      <div className="flex flex-wrap justify-around gap-[44px] my-[12.5px]">
+        <div className="w-[130px] h-[130px] overflow-hidden rounded-full">
+          <Image
+            src="/img/home_npc1.png"
+            width={130}
+            height={130}
+            alt=""
+            className="rounded-full"
+          />
+        </div>
+        <div className="w-[130px] h-[130px] overflow-hidden rounded-full">
+          <Image
+            src="/img/home_npc2.png"
+            width={130}
+            height={130}
+            alt=""
+            className="rounded-full"
+          />
+        </div>
+        <div className="w-[130px] h-[130px] overflow-hidden rounded-full">
+          <Image
+            src="/img/home_npc3.png"
+            width={130}
+            height={130}
+            alt=""
+            className="rounded-full"
+          />
+        </div>
+        <div className="w-[130px] h-[130px] overflow-hidden rounded-full">
+          <Image
+            src="/img/home_npc4.png"
+            width={130}
+            height={130}
+            alt=""
+            className="rounded-full"
+          />
+        </div>
+        <div className="w-[130px] h-[130px] overflow-hidden rounded-full">
+          <Image
+            src="/img/home_npc5.png"
+            width={130}
+            height={130}
+            alt=""
+            className="rounded-full"
+          />
+        </div>
       </div>
       <SectionDivider />
       <h1>XR Experience Platform</h1>

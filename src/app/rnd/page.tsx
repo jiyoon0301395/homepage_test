@@ -31,7 +31,7 @@ export default function RndPage() {
     <AppFrame>
       <SectionDivider />
       <h1>R&amp;D</h1>
-      <TextToken>AI NPC</TextToken>
+      <TextToken fixedSize>AI NPC</TextToken>
       <Image src="/img/rnd_1.png" width={982} height={582} alt="AI NPC" />
       <SubSection num="1 - 1">Template NPC API</SubSection>
       <Image

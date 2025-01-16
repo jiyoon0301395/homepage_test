@@ -25,12 +25,30 @@ export default function Home() {
         with dynamic, immersive interactions like never before.
       </div>
       <div className="flex flex-wrap gap-[7px] justify-center my-10">
-        <TextToken>NPC Persona</TextToken>
+        {/* <TextToken>NPC Persona</TextToken>
         <TextToken>Voice(TTS, STT)</TextToken>
         <TextToken>Quick, Customer-Centric Production</TextToken>
         <TextToken>Variety Emotional Expressions</TextToken>
         <TextToken>Natural Movements</TextToken>
+      </div> */}
+        {/* <div className="grid lg:grid-cols-5 md:grid-cols-5 sm:grid-cols-3 gap-[7px] justify-center my-10"> */}
+        <div className="col-span-1">
+          <TextToken>NPC Persona</TextToken>
+        </div>
+        <div className="col-span-1">
+          <TextToken>Voice(TTS, STT)</TextToken>
+        </div>
+        <div className="col-span-1">
+          <TextToken>Quick, Customer-Centric Production</TextToken>
+        </div>
+        <div className="sm:col-span-2 sm:col-start-1">
+          <TextToken>Variety Emotional Expressions</TextToken>
+        </div>
+        <div className="sm:col-span-2 sm:col-start-2">
+          <TextToken>Natural Movements</TextToken>
+        </div>
       </div>
+
       <div className="flex flex-wrap justify-around gap-[30px] my-[39.5px]">
         <GrayRBox>
           <Image src="/img/home_mock1.png" width={205} height={205} alt="" />

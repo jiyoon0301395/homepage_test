@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-// TODO: inter-font 적용
+/* TODO: inter-font 적용 */
 /* @font-face {
   font-family: "Inter";
   src: url("https://fonts.gstatic.com/s/inter/v12/UcCO3FwrHAn7DL_8PXlgBw.woff2") format("woff2"),

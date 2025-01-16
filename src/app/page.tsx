@@ -19,34 +19,38 @@ export default function Home() {
       <SectionDivider />
       <h1 className="mb-6">AI NPC</h1>
       <div className="text-center text-[24px]">
-        Meet your personalized AI NPC, crafted just for you. Unlock new
-        possibilities
-        <br />
-        with dynamic, immersive interactions like never before.
+        {/* 1025px 이상 */}
+        <span className="hidden lg:inline-block whitespace-nowrap">
+          Meet your personalized AI NPC, crafted just for you. Unlock new
+          possibilities
+          <br />
+          with dynamic, immersive interactions like never before.
+        </span>
+
+        {/* 700~1024px */}
+        <span className="hidden md:inline-block lg:hidden whitespace-nowrap">
+          Meet your personalized AI NPC, crafted just for you. Unlock new
+          possibilities
+          <br />
+          with dynamic, immersive interactions like never before.
+        </span>
+
+        {/* 모바일 ~700px */}
+        <span className="inline-block md:hidden whitespace-nowrap">
+          Meet your personalized AI NPC, crafted just for you.
+          <br />
+          Unlock new possibilities with dynamic, immersive
+          <br />
+          interactions like never before.
+        </span>
       </div>
+
       <div className="flex flex-wrap gap-[7px] justify-center my-10">
-        {/* <TextToken>NPC Persona</TextToken>
+        <TextToken>NPC Persona</TextToken>
         <TextToken>Voice(TTS, STT)</TextToken>
         <TextToken>Quick, Customer-Centric Production</TextToken>
         <TextToken>Variety Emotional Expressions</TextToken>
         <TextToken>Natural Movements</TextToken>
-      </div> */}
-        {/* <div className="grid lg:grid-cols-5 md:grid-cols-5 sm:grid-cols-3 gap-[7px] justify-center my-10"> */}
-        <div className="col-span-1">
-          <TextToken>NPC Persona</TextToken>
-        </div>
-        <div className="col-span-1">
-          <TextToken>Voice(TTS, STT)</TextToken>
-        </div>
-        <div className="col-span-1">
-          <TextToken>Quick, Customer-Centric Production</TextToken>
-        </div>
-        <div className="sm:col-span-2 sm:col-start-1">
-          <TextToken>Variety Emotional Expressions</TextToken>
-        </div>
-        <div className="sm:col-span-2 sm:col-start-2">
-          <TextToken>Natural Movements</TextToken>
-        </div>
       </div>
 
       <div className="flex flex-wrap justify-around gap-[30px] my-[39.5px]">

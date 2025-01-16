@@ -2,10 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
+// TODO: inter-font 적용
+/* @font-face {
+  font-family: "Inter";
+  src: url("https://fonts.gstatic.com/s/inter/v12/UcCO3FwrHAn7DL_8PXlgBw.woff2") format("woff2"),
+       url("https://fonts.gstatic.com/s/inter/v12/UcCO3FwrHAn7DL_8PXlgB.woff") format("woff"),
+       url("https://fonts.gstatic.com/s/inter/v12/UcCO3FwrHAn7DL_8PXlgA.ttf") format("truetype");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.specific-class {
+  font-family: "Inter", sans-serif;
+}
+
 body {
   color: #fff;
   background: #000;
 }
+.inter {
+  font-family: Inter, sans-serif;
+} */
+/* .sc-bold2 {
+  font-family: SCoreDreamBold2, sans-serif;
+} */
 
 /* ==========================================================================
 Animation System by Neale Van Fleet from Rogue Amoeba

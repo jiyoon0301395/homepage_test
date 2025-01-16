@@ -13,6 +13,10 @@ export default {
         foreground: "var(--foreground)",
         customBlue: "#00C3FF",
       },
+      fontFamily: {
+        inter: ["Inter", "sans-serif"],
+        sans: ["DefaultFont", "sans-serif"],
+      },
     },
   },
   plugins: [],

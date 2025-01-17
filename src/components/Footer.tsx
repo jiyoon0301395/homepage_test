@@ -28,8 +28,7 @@ export default function Footer() {
 
       {/* TODO: if you have~ font: Inter */}
       {/* TODO: if you have~ 부분 자동줄바꿈 금지 while-space : nowrap 적용 */}
-      <div className="text-[20px] lg:text-xl my-2 lg:my-4 font-thin">
-        {/* <div className="inter text-[20px] lg:text-xl my-2 lg:my-4 font-thin"> */}
+      {/* <div className="text-[20px] lg:text-xl my-2 lg:my-4 font-thin">
         If you have any questions about DeepXRLab&apos;s metaverse solutions,
         <br />
         please send an inquiry email to{" "}
@@ -40,6 +39,22 @@ export default function Footer() {
           info@deepxrlab.com
         </a>{" "}
         or click the button below.
+      </div> */}
+
+      <div className="text-md lg:text-xl my-2 lg:my-4">
+        If you have hany questions about DeepXRLab&apos;s metaverse
+        <br className="lg:hidden md:hidden" /> solutions,
+        <br />
+        please send an inquiry email to{" "}
+        <a
+          href="mailto:info@deepxrlab.com"
+          className="font-bold text-md lg:text-2xl"
+        >
+          info@deepxrlab.com
+        </a>{" "}
+        <span className="whitespace-nowrap"></span>
+        or click
+        <br className="md:hidden" /> the button below.
       </div>
 
       <Link href="/contact">
